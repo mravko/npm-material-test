@@ -1,5 +1,5 @@
 import * as React from "react";
-import App from "p2llib/build/bundle";
+import App from "p2llib";
 
 console.log(App);
 

@@ -1,17 +1,21 @@
 {
   "name": "p2llib",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "",
   "main": "build/bundle.js",
   "scripts": {
     "start": "webpack-dev-server --hot --history-api-fallback --progress --colors --port 3000",
-    "build": "webpack -p --progress --colors"
+    "build": "webpack -d --progress --colors"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "@material-ui/core": "^4.7.1"
   },
   "devDependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "@material-ui/core": "^4.7.1",
     "@babel/core": "^7.7.4",
     "@babel/polyfill": "^7.7.0",
     "@babel/preset-env": "^7.7.4",

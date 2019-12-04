@@ -16,11 +16,21 @@ module.exports = {
     filename: "bundle.js",
     libraryTarget: "umd"
   },
+  optimization: {
+    minimize: false
+  },
   target: "web",
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx"],
     // Fix webpack's default behavior to not load packages with jsnext:main module
     // (jsnext:main directs not usually distributable es6 format, but es6 sources)
     mainFields: ["module", "browser", "main"]
-  }
+  },
+  externals: [
+    {
+      react: "react",
+      "react-dom": "react-dom",
+      "@material-ui/core": "@material-ui/core"
+    }
+  ]
 };
