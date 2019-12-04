@@ -1,12 +1,10 @@
 import * as React from "react";
-import { ReactColorSquare, WrappedMaterialUiButton } from "packagetest";
-import { useState } from "react";
+import App from "p2llib/build/bundle";
 
-console.log(ReactColorSquare);
-console.log(WrappedMaterialUiButton);
+console.log(App);
 
-const App = () => {
-  return <WrappedMaterialUiButton />;
+const App2 = () => {
+  return <App />;
 };
 
-export default App;
+export default App2;
