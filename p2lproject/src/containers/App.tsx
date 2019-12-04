@@ -1,10 +1,15 @@
 import * as React from "react";
-import App from "p2llib";
+import { TextFieldWithLabel, ButtonWithLabel } from "p2llib";
 
-console.log(App);
+console.log(TextFieldWithLabel);
 
 const App2 = () => {
-  return <App />;
+  return (
+    <div>
+      <TextFieldWithLabel />
+      <ButtonWithLabel variant="contained" color="primary" />
+    </div>
+  );
 };
 
 export default App2;

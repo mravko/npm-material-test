@@ -1,3 +1,6 @@
-import App from "./containers/App";
+import ButtonWithLabel from "./containers/ButtonWithLabel";
+import Button from "@material-ui/core/Button";
+import TextField from "@material-ui/core/TextField";
+import TextFieldWithLabel from "./containers/TextFieldWithLabel";
 
-export default App;
+export { ButtonWithLabel, Button, TextField, TextFieldWithLabel };
