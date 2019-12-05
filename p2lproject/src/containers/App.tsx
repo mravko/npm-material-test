@@ -1,13 +1,31 @@
 import * as React from "react";
-import { TextFieldWithLabel, ButtonWithLabel } from "p2llib";
+import {
+  TextFieldWithLabel,
+  ButtonWithLabel,
+  TextField,
+  Typography
+} from "p2llib";
+import {
+  createMuiTheme,
+  makeStyles,
+  ThemeProvider
+} from "@material-ui/core/styles";
 
-console.log(TextFieldWithLabel);
+const theme = createMuiTheme({
+  typography: {
+    fontSize: 50
+  }
+});
 
 const App2 = () => {
   return (
     <div>
-      <TextFieldWithLabel />
-      <ButtonWithLabel variant="contained" color="primary" />
+      <ThemeProvider theme={theme}>
+        <Typography>Theme test</Typography>
+        <TextFieldWithLabel />
+        <ButtonWithLabel variant="contained" color="primary" />
+        <TextField></TextField>
+      </ThemeProvider>
     </div>
   );
 };
